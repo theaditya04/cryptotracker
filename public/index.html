@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   <!-- Google Fonts -->
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+   
+   <link rel="stylesheet" href="style.css">
+   <title>Real-Time Cryptocurrency Tracker</title>
+</head>
+<body>
+   <div class="container">
+       <h1>Real-Time Cryptocurrency Tracker</h1>
+
+       <!-- Search Bar and Submit Button -->
+       <div class="search-container">
+           <input type="text" id="searchBar" placeholder="Enter cryptocurrency">
+           <button id="searchButton">Submit</button>
+       </div>
+
+       <!-- Loader and Error Message -->
+       <!-- <div id="loader" class="hidden">Loading data...</div> -->
+       <div id="error" class="hidden"></div>
+
+       <!-- Crypto Data Table -->
+       <table>
+           <thead>
+               <tr>
+                   <th>Name</th>
+                   <th>Symbol</th>
+                   <th>Price (USD)</th>
+                   <th>24h Change (%)</th>
+               </tr>
+           </thead>
+           <tbody id="cryptoTableBody"></tbody>
+       </table>
+
+       <!-- Footer -->
+       <footer>
+           <p>&copy; CryptoTracker. All rights reserved by Aditya Lahiri.</p>
+       </footer>
+
+   </div>
+
+   <script src="app.js"></script>
+</body>
+</html>
